@@ -8,11 +8,22 @@ export interface CoffeeOrder {
   imageUrl: string
 }
 
+interface ActionCart {
+  type: string;
+  payload: DataCart;
+}
+
+interface DataCart {
+  data: CoffeeOrder
+  id: number
+}
+
+
 export interface CartState {
   items: CoffeeOrder[]
 }
 
-export const cartReducer = (state: CoffeeOrder[], action: any) => {
+export const cartReducer = (state: CoffeeOrder[], action: ActionCart) => {
   switch (action.type) {
     case ActionTypes.ADD_NEW_ITEM:
       return [...state, action.payload.data]
