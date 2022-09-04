@@ -10,13 +10,13 @@ import { OrderContextProvider } from './contexts/OrderContext'
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
         <OrderContextProvider>
           <CartContextProvider>
             <Router />
           </CartContextProvider>
         </OrderContextProvider>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
       <GlobalStyles />
     </ThemeProvider>
   )

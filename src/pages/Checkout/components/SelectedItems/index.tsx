@@ -5,10 +5,10 @@ import { OrderItem } from '../OrderItem'
 import { OrderSummaryBlockWrapper, SelectedItemsContainer } from './styles'
 
 export const SelectedItems = () => {
-  const { items, deliveryFee, totalItemsPrice, totalOrderPrice } =
+  const { items, totalItems, deliveryFee, totalItemsPrice, totalOrderPrice } =
     useContext(CartContext)
 
-  const isCartEmpty = items.length <= 0
+  const isCartEmpty = totalItems <= 0
 
   return (
     <SelectedItemsContainer>
@@ -25,15 +25,15 @@ export const SelectedItems = () => {
         )}
         <div className="order-price">
           <p>
-            <span>Total de itens</span>{' '}
+            <span>Total de itens</span>
             <span>{formatPriceWithCurrency(totalItemsPrice)}</span>
           </p>
           <p>
-            <span>Entrega</span>{' '}
+            <span>Entrega</span>
             <span>{formatPriceWithCurrency(deliveryFee)}</span>
           </p>
           <p>
-            <span>Total</span>{' '}
+            <span>Total</span>
             <span>{formatPriceWithCurrency(totalOrderPrice)}</span>
           </p>
         </div>
