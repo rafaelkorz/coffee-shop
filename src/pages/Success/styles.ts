@@ -43,7 +43,7 @@ export const ClientInformationContainer = styled.div`
     linear-gradient(
       to right,
       ${(props) => props.theme.colors.yellow},
-      ${(props) => props.theme.colors.purple}
+      ${(props) => props.theme.colors['purple']}
     );
   background-origin: border-box;
   background-clip: content-box, border-box;
@@ -76,7 +76,7 @@ export const ClientInformationItem = styled.div`
     }
 
     &.timer {
-      background: ${(props) => props.theme.colors.yellow};
+      background: ${(props) => props.theme.colors['yellow']};
     }
 
     &.currency {

@@ -16,7 +16,7 @@ export const CounterContainer = styled.div`
     align-items: center;
     justify-content: center;
     background: transparent;
-    color: ${(props) => props.theme.colors.purple};
+    color: ${(props) => props.theme.colors['purple']};
     transition: color 0.2s;
 
     &:hover {

@@ -51,9 +51,9 @@ export const OrderSummaryBlockWrapper = styled.div`
 
   button[type='submit'] {
     border-radius: 6px;
-    background: ${(props) => props.theme.colors.yellow};
+    background: ${(props) => props.theme.colors['yellow']};
     text-transform: uppercase;
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors['white']};
     width: 100%;
     border: 0;
     padding: 0.75rem;

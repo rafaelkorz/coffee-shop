@@ -45,7 +45,7 @@ export const OrderItemContainer = styled.li`
         line-height: 1.3;
 
         svg {
-          color: ${(props) => props.theme.colors.purple};
+          color: ${(props) => props.theme.colors['purple']};
         }
 
         &:hover {

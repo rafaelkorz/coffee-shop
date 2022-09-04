@@ -1,6 +1,6 @@
 export const defaultTheme = {
   colors: {
-    white: '#fff',
+    'white': '#fff',
 
     'gray-100': '#fafafa', // background
     'gray-200': '#f3f2f2', // base-card
@@ -13,11 +13,11 @@ export const defaultTheme = {
     'gray-900': '#272221', // base-title
 
     'yellow-light': '#f1e9c9',
-    yellow: '#dbac2c',
+    'yellow': '#dbac2c',
     'yellow-dark': '#c47f17',
 
     'purple-light': '#ebe5f9',
-    purple: '#8047f8',
+    'purple': '#8047f8',
     'purple-dark': '#4b2995',
   },
 }

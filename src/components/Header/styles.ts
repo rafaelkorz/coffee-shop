@@ -55,7 +55,7 @@ export const CartContainer = styled(BaseNavItem)`
   transition: background 0.2s, color 0.2s;
 
   &:hover {
-    background: ${(props) => props.theme.colors.yellow};
+    background: ${(props) => props.theme.colors['yellow']};
     color: ${(props) => props.theme.colors['yellow-light']};
   }
 

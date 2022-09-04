@@ -103,7 +103,7 @@ export const PaymentOptions = styled.div`
 
     &:checked + label {
       background: ${(props) => props.theme.colors['purple-light']};
-      border-color: ${(props) => props.theme.colors.purple};
+      border-color: ${(props) => props.theme.colors['purple']};
     }
   }
 

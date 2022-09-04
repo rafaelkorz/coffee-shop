@@ -8,7 +8,7 @@ export const LayoutContainer = styled.div`
   padding-right: 12rem;
   padding-left: 12rem;
 
-  background: ${(props) => props.theme.colors.white};  
+  background: ${(props) => props.theme.colors['white']};  
 
   display: flex;
   flex-direction: column;
